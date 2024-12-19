@@ -82,7 +82,6 @@ def move_player(dx, dy):
 def game_loop():
     global player_x, player_y
     generate_level()
-    render()
     
     while True:
         command = input("Enter input : ").lower()
