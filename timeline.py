@@ -1,4 +1,9 @@
 from random import randint
+from roguelike import RogueLike
+import random
+import os
+
+
 
 class Timeline:
     baseyear = 1991
@@ -15,3 +20,11 @@ class Timeline:
         print("Mission one happen in : ", self.ym1)
         print("Mission two happen in : " , self.ym2)
         print("Mission three happen in : " , self.ym3)
+        ch = input("Select Mission")
+        rg = RogueLike
+        rg.Play()
+
+
+
+
+        
