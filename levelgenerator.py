@@ -86,9 +86,9 @@ def game_loop():
     while True:
         command = input("Enter input : ").lower()
         render()
-        if command == "z":
+        if command == 'z':
             move_player(0, -1)
-        elif command == "s":
+        elif command == 's':
             move_player(0, 1)
         elif command == "q":
             move_player(-1, 0)
@@ -97,6 +97,8 @@ def game_loop():
         elif command == 'm':
             print("Quitting")
             break
+    render()          
 
 if __name__ == "__main__":
     game_loop()
+        
